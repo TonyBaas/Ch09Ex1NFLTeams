@@ -24,7 +24,7 @@ namespace NFLTeams.Models
             session.GetObject<List<Team>>(TeamsKey) ?? new List<Team>();
         public int? GetMyTeamCount() => session.GetInt32(CountKey);
 
-        public void SetName(string userName = "User 1")
+        public void SetName(string userName = "User_1")
         {
             session.SetString(NameKey, userName);
         }
